@@ -45,19 +45,20 @@
 .dark-theme button,
 .dark-theme h1,
 .dark-theme h2,
-.dark-theme h3{
+.dark-theme h3 {
   letter-spacing: 5px;
   font-weight: normal;
 }
 
 .dark-theme .invert-element {
-  transform:  rotateZ(180deg) scaleX(-1);
+  transform: rotateZ(180deg) scaleX(-1);
 }
 
 * {
   margin: 0;
   box-sizing: border-box;
   padding: 0;
+  transition: 1s;
 }
 
 h1,
@@ -93,7 +94,7 @@ button {
 }
 
 input,
-textarea{
+textarea {
   border: 2px solid var(--primary-color-contrast);
   background-color: var(--field-background-color);
   color: var(--primary-color-contrast);
@@ -103,12 +104,12 @@ textarea{
 }
 
 input:focus-visible,
-textarea:focus-visible{
+textarea:focus-visible {
   outline: none;
   border-color: black;
 }
 
-label{
+label {
   margin-bottom: 8px;
 }
 
@@ -195,13 +196,13 @@ main {
   align-items: center;
 }
 
-main::before{
+main::before {
   content: "";
   width: 100%;
   height: 100%;
   position: absolute;
   background: var(--page-background) no-repeat,
-  url(../images/backgrounds/florest.png) no-repeat;
+    url(../images/backgrounds/florest.png) no-repeat;
   background-size: cover;
   z-index: -1;
 }
@@ -341,7 +342,7 @@ section {
   text-align: left;
 }
 
-#section-form .form-container form button{
+#section-form .form-container form button {
   border: none;
   background-color: var(--field-background-color);
   color: var(--primary-color-contrast);
@@ -349,7 +350,7 @@ section {
   align-self: center;
 }
 
-#section-form .form-container form button:hover{
+#section-form .form-container form button:hover {
   background-color: var(--primary-color-contrast);
   color: var(--field-background-color);
 }

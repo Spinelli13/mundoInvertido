@@ -42,6 +42,18 @@
   --footer-background-color: #000;
 }
 
+.dark-theme button,
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3{
+  letter-spacing: 5px;
+  font-weight: normal;
+}
+
+.dark-theme .invert-element {
+  transform:  rotateZ(180deg) scaleX(-1);
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
